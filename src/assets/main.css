@@ -1,0 +1,106 @@
+@import './base.css';
+
+#app {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+@media (min-width: 1920px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+.btn-main{
+  background: #34495e;
+  padding: 0.4rem 1.6rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-main:hover{
+  background: #243241;
+}
+.btn-action{
+  background: #40b883;
+  padding: 0.4rem 1.6rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-action:hover{
+  background: #33956b;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+input{
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #ededed;
+}
+
+.grp-card{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.card{
+  border-radius: 10px;
+  background: gray;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  box-shadow: 20px 20px 15px rgba(255, 0, 0, 0.1)
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.btn-action2{
+  margin-top: 2rem;
+  background: #40b883;
+  padding: 1rem 16rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+.btn-action:hover{
+  background: #33956b;
+}
